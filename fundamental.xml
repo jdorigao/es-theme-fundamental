@@ -454,18 +454,32 @@ author:			Grila
 			<pos>0.26 0.12</pos>
 			<size>0.75 0.78</size>
 			<margin>0 0</margin>
+			<padding>0.01 0.01 0.01 0.1</padding>
+			<zIndex>10</zIndex>
+      		<autoLayout>4 3</autoLayout>
+			<autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
+      		<animateSelection>false</animateSelection>
+			<centerSelection>false</centerSelection>
+			<showVideoAtDelay>800</showVideoAtDelay>
 		</imagegrid>
 
 		<gridtile name="default">
-			<size>0.15 0.20</size>
-			<backgroundCornerSize>0.01 0.01</backgroundCornerSize>
-			<backgroundColor>42424200</backgroundColor>
+		    <backgroundColor>FFFFFF00</backgroundColor>
+			<backgroundCornerSize>9 9</backgroundCornerSize>
+			<selectionMode>image</selectionMode>
+			<padding>5 5</padding>
+			<imageColor>FFFFFFB0</imageColor>
 		</gridtile>
 
 		<gridtile name="selected">
-			<size>0.20 0.25</size>
 			<backgroundColor>42424200</backgroundColor>
+			<imageColor>FFFFFFFF</imageColor>
 		</gridtile>
+
+		<ninepatch name="gridtile.background:selected">
+			<animateColor>b3b3b3ff</animateColor>
+			<animateColorTime>350</animateColorTime>
+		</ninepatch>
 
 		<text name="md_name">
 			<fontPath>./core/fonts/BebasKai-Regular.otf</fontPath>
@@ -577,7 +591,7 @@ author:			Grila
 			<fontPath>./core/fonts/segoeuil.ttf</fontPath>
 			<fontSize>0.0277777777777778</fontSize>
 			<pos>0.01 0.7</pos>
-			<size>0.23 0.28</size>
+			<size>0.23 0.26</size>
 			<color>${metaTextColor}</color>
 			<lineSpacing>1.17</lineSpacing>
 		</text>	
